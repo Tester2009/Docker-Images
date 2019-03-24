@@ -1,6 +1,14 @@
 # Firebase Tools
 A docker to use Firebase Tools.
 
+
+## Warning
+
+Before you start running this Dockerfile, you have to remember that, once you create container with opening port 9005 on internal side, you cannot use that port for the next container.
+
+That's mean only one container can be running to use that port at one time, unless you stop it.
+
+
 ## Guide
 
 1. Download ```Dockerfile``` from this folder.
