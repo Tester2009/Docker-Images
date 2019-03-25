@@ -12,7 +12,7 @@ RUN apt-get -y install nano
 # install `dnsutils` to use `dig`
 RUN apt-get -y install dnsutils
 # remove current /etc/resolve.conf
-RUN echo '' > /etc/resolv.conf
+RUN echo "" > /etc/resolv.conf
 # add nameserver
 RUN echo "nameserver 1.1.1.1" >> /etc/resolv.conf
 RUN echo "nameserver 1.0.0.1" >> /etc/resolv.conf
@@ -28,3 +28,4 @@ RUN apt-get -y install ssh
 RUN apt-get -y install nmap
 RUN apt-get -y install netcat
 RUN apt-get -y install tcpdump
+RUN apt-get -y install curl
